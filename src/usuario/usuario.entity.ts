@@ -83,4 +83,14 @@ export class Usuario {
         name: 'joinDate'
     })
     dataEntrada: Date;
+
+
+    constructor(usuario?: Partial<Usuario>) {
+        this.id = usuario?.id;
+        this.nickname = usuario?.nickname;
+        this.nome = usuario?.nome;
+        this.email = usuario?.email;
+        this.senha = usuario?.senha;
+        this.dataEntrada = usuario?.dataEntrada;
+    }
 }

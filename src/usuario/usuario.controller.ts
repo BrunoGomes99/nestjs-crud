@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, HttpStatus, Inject, NotFoundException, Param, Post, Put, Res } from "@nestjs/common";
-import { NestResponse } from "src/core/http/nestResponse";
-import { NestResponseBuilder } from "src/core/http/nestResponseBuilder";
+import { NestResponse } from "../core/http/nestResponse";
+import { NestResponseBuilder } from "../core/http/nestResponseBuilder";
 import { Usuario } from "./usuario.entity";
 import { UsuarioService } from "./usuario.service";
 
