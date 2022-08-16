@@ -31,7 +31,7 @@ export class UsuarioService {
     }
 
     public async alterar(usuario: Usuario): Promise<Usuario> {
-        await this.usuarioRepository.save(usuario);
+        this.usuarioRepository.save(usuario);
         return usuario;
     }
 
